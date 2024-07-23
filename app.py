@@ -20,8 +20,8 @@ with st.sidebar:
     os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
     st.subheader('Models and parameters')
-    selected_model = st.sidebar.selectbox('Choose a Llama3 model', ['Llama3-8B'], key='selected_model')
-    if selected_model == 'Llama3-8B':
+    selected_model = st.sidebar.selectbox('Choose a Llama3 model', ['Llama3-8B-instruct-FT'], key='selected_model')
+    if selected_model == 'Llama3-8B-instruct-FT':
         llm = 'meta/meta-llama-3-8b-instruct'
     temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
     top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
