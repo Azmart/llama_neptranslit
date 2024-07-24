@@ -5,7 +5,7 @@ import os
 # App title
 st.set_page_config(page_title="🦙💬 Llama 3 Transliteration bot")
 
-st.title('Llama3 based Transliteration Bot')
+st.title('Llama3 based Transliteration Bot / 以 Llama3 為基礎的音譯機器人')
 
 # Replicate Credentials
 with st.sidebar:
